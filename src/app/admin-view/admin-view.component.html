@@ -1,0 +1,50 @@
+
+<table>
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Images</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+
+        <tr *ngFor="let prod of products_list">
+            <td>{{prod.id}}</td>
+            <td><img src={{prod.img}} alt="img"></td>
+            <td>{{prod.name}}</td>
+            <td>{{prod.price}}</td>
+            <td>{{prod.description}}</td>
+            <td>
+                <input type="button"  value="Edit" class="btn btn-warning" (click)="editProd(prod)"> &nbsp;&nbsp;
+                <input type="button"  value="Delete" class="btn btn-danger" (click)="deleteProd(prod.id)">
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+
+<form [formGroup] = "prodform" (ngSubmit)="saveDate_ts()">
+    <label for="id">ProductID</label>
+    <input type="text" placeholder="ProductID" required class="form-control" formControlName="id" id="id">
+
+    <label for="name">ProductName</label>
+    <input type="text" placeholder="ProductName" required class="form-control" formControlName="name" id="name">
+
+    <label for="Price">Price</label>
+    <input type="text" placeholder="Price" required class="form-control"  formControlName="price" id="price">&nbsp;<br>
+    
+    <label for="ImageLink">ImageLink</label>
+    <input type="text" placeholder="ImageLink" required class="form-control"  formControlName="img" id="img">&nbsp;<br>
+    
+
+    <label for="Description">Description</label>
+    <input type="text" placeholder="Description" required class="form-control"  formControlName="description" id="description">&nbsp;<br>
+    
+
+    <input type="submit"  class="btn btn-success"  value="AddProduct">&nbsp;&nbsp;
+
+    <input type="button"  class="btn btn-primary" value="Cancel"  (click)="clearForm()">
+</form>

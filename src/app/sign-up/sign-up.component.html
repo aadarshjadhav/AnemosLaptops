@@ -1,0 +1,117 @@
+<form [formGroup]="userform" (ngSubmit)="OnSubmit()" class="container justify-content-center signup-base">
+    <div class="row">
+        <div class="col">
+            <h1>SignUp</h1>
+            <div class="text-box-base">
+
+                <label>FullName</label>
+                <input type="text" formControlName="fullname" class="form-control" class="input-text-box"
+                    [ngClass]="{'is-invalid':submitted && f['fullname'].errors}">
+                @if(submitted && f['fullname'].errors)
+                {
+                @if(f['fullname'].errors['required'])
+                {
+                <div>FullName Must be Required</div>
+                }
+                }
+
+            </div>
+
+            <div class="text-box-base">
+
+                <label>UserName</label>
+                <input type="text" formControlName="username" class="form-control" class="input-text-box"
+                    [ngClass]="{'is-invalid':submitted && f['username'].errors}">
+                @if(submitted && f['username'].errors)
+                {
+                @if(f['username'].errors['required'])
+                {
+                <div>UserName Must be Required</div>
+                }
+                @if(f['username'].errors['minlength'])
+                {
+                <div>Min 6 char required for Username</div>
+                }
+                }
+
+            </div>
+            <div class="text-box-base">
+
+                <label>Email</label>
+                <input type="text" formControlName="email" class="form-control" class="input-text-box"
+                    [ngClass]="{'is-invalid':submitted && f['email'].errors}">
+                @if(submitted && f['email'].errors)
+                {
+                    @if(f['email'].errors['required'])
+                    {
+                        <div>Email Must be Required</div>
+                    }
+                    @if( f['email'].errors['email'])
+                    {
+                        <div>Invalid Email</div>
+                    }
+                }
+
+            </div>
+
+            <div class="text-box-base">
+
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control" class="input-text-box"
+                    [ngClass]="{'is-invalid':submitted && f['password'].errors}">
+                @if(submitted && f['password'].errors)
+                {
+                    @if(f['password'].errors['required'])
+                    {
+                        <div>Password Must be Required</div>
+                    }
+                    @if(f['password'].errors['minlength'])
+                    {
+                        <div>Min 6 char required for password</div>
+                    }
+                }
+
+            </div>
+
+            <div class="text-box-base">
+
+                <label>Confirm Password</label>
+                <input type="password" formControlName="confirmPassword" class="form-control" class="input-text-box"
+                    [ngClass]="{'is-invalid': submitted && f['confirmPassword'].errors}">
+                <!-- Validation messages for Confirm Password -->
+                @if(submitted && f['confirmPassword'].errors)
+                {
+                    @if(f['confirmPassword'].errors['required'])
+                    {
+                        <div>Confirm Password Must be Required</div>
+                    }
+
+                <!-- Compare passwords directly -->
+                    @if(userform.get('password')?.value !== userform.get('confirmPassword')?.value &&
+                    userform.get('confirmPassword')?.dirty)
+                    {
+                        <div>Passwords must match</div>
+                    }
+                }
+
+            </div>
+
+            <div class="terms-base">
+                <input type="checkbox" formControlName="acceptTerms" class="form-check-input checkbox-input"
+                    [ngClass]="{'is-invalid':submitted && f['acceptTerms'].errors}">
+                <label> Accept Terms & conditions</label>
+                @if(submitted && f['acceptTerms'].errors)
+                {
+                    <div>Accept terms is required</div>
+                }
+
+            </div>
+
+            <div class="button-base">
+                <button type="submit" class="btn ">Submit</button>
+                <button type="button" class="btn " (click)="OnReset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+</form>

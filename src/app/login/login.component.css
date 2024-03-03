@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.c-form-base{
+
+    padding: 20px;
+    margin: 40px auto;
+   
+    overflow: hidden;
+    background-color: rgb(210, 255, 255);
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px ;
+    min-width: 200px auto;
+    max-height: 400px auto;
+    min-height: 300px;
+}
+
+.container{
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.input-text-box {
+    width: 240px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    background-color: #fff; /* Set a background color */
+    padding: 10px; /* Add padding for text */
+    font-size: 16px; 
+}
+
+.username-base{
+
+    /* border: solid blueviolet 2px  ; */
+    margin: 5px;
+}
+
+.password-base{
+
+    /* border: solid blueviolet 2px  ; */
+    margin: 5px;
+}
+
+
+label{
+    /* border: solid 2px red; */
+    margin-left: 0px;
+    margin-top: 3px;
+
+    margin-bottom: 3px;
+}
+
+.btn{
+    width: 100px;
+    margin: 10px;
+    height: 35px;
+    background-color: rgb(38, 219, 255);
+}
+
+.btn:hover {
+    background-color: rgb(0, 169, 255); /* Changing background color on hover */
+
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}

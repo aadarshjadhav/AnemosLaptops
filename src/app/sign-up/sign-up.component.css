@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup-base{
+
+    border: solid 2px rgb(255, 255, 255);
+    padding: 20px;
+    margin: 40px auto;
+   
+    overflow: hidden;
+    background-color: rgb(210, 255, 255);
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 320px ;
+    min-width: 320px ;
+    max-height: 400px auto;
+    min-height: 300px;
+
+}
+
+.text-box-base{
+    margin: 10px;
+    /* border: solid 2px blue; */
+
+}
+
+.input-text-box {
+    width: 240px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    background-color: #fff; /* Set a background color */
+    padding: 10px; /* Add padding for text */
+    font-size: 16px; 
+}
+
+.terms-base{
+    margin: 10px;
+    /* border: solid 2px rgb(255, 22, 205); */
+    align-items: center;
+}
+.checkbox-input{
+
+    margin: 5px;    
+}
+
+.btn{
+    width: 100px;
+    margin: 13px;
+    height: 35px;
+    background-color: rgb(38, 219, 255);
+
+}
+
+.btn:hover {
+    background-color: rgb(0, 169, 255); /* Changing background color on hover */
+
+}
+
+.button-base{
+    
+    margin: 10px;
+    /* border: solid 2px rgb(255, 22, 205); */
+}
+
+
+label{
+    /* border: solid 2px red; */
+    margin-left: 0px;
+    margin-top: 3px;
+
+    margin-bottom: 3px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+

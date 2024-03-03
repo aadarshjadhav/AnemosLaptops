@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.c-search-bar {
+    border: solid 2px rgb(255, 255, 255);
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 40px;
+    max-height: 40px;
+    float: right; /* Align to the right */
+    margin: 10px;
+}
+
+.btn-success{
+    padding: 7px;
+}
+
+.login-signup-link-base{
+
+    border:solid 2px rgb(199, 255, 199);
+    
+    max-height: 40px;
+    min-height: 40px;
+    
+}
+
+.login-signup-link{
+
+    /* border: 2px solid rgb(255, 255, 255); */
+    margin: 10px;
+}
+
+.container-fluid{
+
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.navbar-brand{
+    margin: 8px;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+}

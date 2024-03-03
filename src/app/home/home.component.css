@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-width{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+}
+
+.form-control{
+    width: 400px;
+}
+
+
+/* .bringtocenter{
+    margin: 0 auto;
+
+}
+.carousel-container{
+
+    
+    max-width: 100% auto;
+    overflow: hidden;
+    border: solid royalblue 2px;
+    margin-top: 1.5%;
+} */
+
+.carousel-item img{
+    width: 100%;
+    height: 91.5vh;
+    overflow: visible;
+}
+
+
+/* .carousel-container img {
+    width: 100%;
+    height: auto;
+    max-height: 800px auto; 
+    object-fit: cover; 
+} */
+
+
+

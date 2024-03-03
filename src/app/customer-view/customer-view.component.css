@@ -1,0 +1,105 @@
+
+
+
+.laptops-base{
+
+  /* border: 2px solid rgb(255, 255, 255) ; */
+  padding: 5px auto;
+  margin: 20px auto;
+  max-width: 80%;
+  min-height: 5px auto  ;
+  overflow: hidden;
+  background-color: rgb(210, 255, 255);
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+.column-custom-modify{
+
+  /* border: solid 3px rgb(2, 0, 0); */
+  min-width: 241px;
+  max-width: 400px;
+  min-height: 500px;
+  max-height: 600px;
+  overflow:auto; 
+  align-items: center;
+  margin:auto; /*Making margin auto makes the justify-content-center items aligned with equal margin within the row */
+
+}
+
+.card-test-box-custom-modify{
+
+  /* border: solid 3px rgb(255, 0, 191); */
+  min-width: 208px;
+  max-width: 231px;
+  min-height: 190px;
+  max-height: 190px;
+  overflow:hidden; 
+  align-items: center;
+  margin:auto;
+
+}
+
+
+/* .card-custom-modify{
+ //Not needed as .card overides this one
+
+
+} */
+
+.card{
+  
+  border: 2px solid rgb(255, 255, 255) ;
+  background-color: rgb(214, 250, 244);
+  padding: 1px auto;
+  margin: 5px auto ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  min-width: 208px;
+  max-width: 260px;
+  min-height: 474px;
+  max-height: 474px;
+  overflow:auto; 
+  align-items: start;
+
+}
+
+.small-btn {
+  border: solid 2px;
+  padding: 0.35rem 0.53rem; /* Adjust padding to make the button smaller */
+  font-size: 0.875rem; /* Adjust font size to make the text smaller */
+  margin: 5px;
+  
+}
+
+.btn-base{
+  /* border: #990000 solid 2px; */
+  max-width: 231px;
+  min-width: 210px;
+
+  margin: auto;
+}
+
+.btn-primary {
+  background-color: #91d457; /* Light blue color */
+  border-color: #6cb2eb; /* Light blue color for border */
+  color: #fff; /* White text color */
+  
+}
+
+/* Hover effect - Optional */
+.btn-primary:hover {
+  background-color: #5a9dd8; /* Slightly darker shade of blue on hover */
+  border-color: #326898; /* Slightly darker shade of blue for border on hover */
+}
+
+.card-img-top{
+
+  max-width: 256px;
+  max-height: 236px;
+
+  min-width: 256px;
+  min-height: 236px;
+}
