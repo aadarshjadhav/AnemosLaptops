@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/AdminView",
+    "/CustomerView",
+    "/Dashboard",
+    "/Gaming",
+    "/Home",
+    "/Login",
+    "/Office",
+    "/SignUp",
+    "/Student",
+    "/Workstation"
+  ]
+}
