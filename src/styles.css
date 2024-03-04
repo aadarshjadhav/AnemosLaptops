@@ -5,7 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 5px; /* Width of the scrollbar */
   }
   
   ::-webkit-scrollbar-thumb {

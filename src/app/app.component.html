@@ -1,27 +1,31 @@
 <!-- <h6>App index working!</h6> -->
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-4">
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
-    <img src="assets/website-icon.png" alt="" width="60" height="60"> 
+    <img src="assets/website-icon.png" alt="" width="60" height="60">
     <a class="navbar-brand" href="#">Ánemos</a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/Home']">Home</a>
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/CustomerView']">All Products</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/CustomerView']">AllProducts</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/AdminView']">AdminView</a>
         </li> -->
-        
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/Gaming']">Gaming</a>
         </li>
@@ -38,7 +42,7 @@
           <a class="nav-link active" aria-current="page" [routerLink]="['/Dashboard']">Dashboard</a>
         </li>
 
-      <!-- <mat-form-field>   
+        <!-- <mat-form-field>   
         <input type="text" matInput placeholder="Search">
         </mat-form-field>
         <mat-icon >search</mat-icon> -->
@@ -48,13 +52,28 @@
       <input class="form-control me-2" type="search" placeholder="  Search" aria-label="Search">
       <button class="btn btn-success" type="submit">Search</button>
     </form>
-    
-    <div class="d-flex login-signup-link-base" >
+
+    <div class="d-flex login-signup-link-base">
       <a class="nav-link active login-signup-link" aria-current="page" [routerLink]="['/Login']">Login</a>
       <a class="nav-link active login-signup-link" aria-current="page" [routerLink]="['/SignUp']">SignUp</a>
     </div>
-    
+
   </div>
 </nav>
 
+
 <router-outlet></router-outlet>
+<!-- Footer Section -->
+<!-- Footer Section -->
+<div class="container-fluid footer-width">
+  <footer class="bg-dark text-light text-center py-4 expand-lg">
+    
+      <p>&copy; 2024 Aadarsh's Inventory. All rights reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">About Us</a></li>
+        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+      </ul>
+  
+  </footer>
+</div>

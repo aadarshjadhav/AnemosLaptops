@@ -6,18 +6,13 @@
 
 .c-search-bar {
     border: solid 2px rgb(255, 255, 255);
-    min-width: 450px;
+    min-width: 350px;
     max-width: 450px;
     min-height: 40px;
     max-height: 40px;
-    float: right; /* Align to the right */
-    margin: 10px;
+    /* float: right; Align to the right */
+    margin: 0px;
 }
-
-.btn-success{
-    padding: 7px;
-}
-
 .login-signup-link-base{
 
     border:solid 2px rgb(199, 255, 199);
@@ -26,23 +21,36 @@
     min-height: 40px;
     
 }
-
 .login-signup-link{
 
     /* border: 2px solid rgb(255, 255, 255); */
     margin: 10px;
 }
 
-.container-fluid{
-
-    margin-right: 40px;
-    margin-left: 40px;
+.btn-success{
+    padding: 7px;
 }
 
-.navbar-brand{
+
+
+
+
+/* .footer-width{
+    margin: 0px;
+    padding: 0px;
+    border: 2px red solid;
+    
+} */
+
+/* .navbar-brand{
     margin: 8px;
-}
+} */
 
 .navbar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
 }
+
+.form-control{
+    width: 400px;
+}
+
