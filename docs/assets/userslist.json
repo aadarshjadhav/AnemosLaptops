@@ -30,7 +30,7 @@
       "username": "pritammane",
       "email": "pritammane@gmail.com",
       "password": "pritammane1234",
-      "isadmin": true
+      "isadmin": false
     }
   ]
 }

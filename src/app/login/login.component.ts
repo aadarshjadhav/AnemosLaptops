@@ -103,7 +103,8 @@ export class LoginComponent implements OnInit {
   }
 
   getData() {
-    this.myclient.getData().subscribe(result => { this.usersdata = result })
+    this.myclient.getData().subscribe(result => { this.usersdata = result 
+      this.usersdata=this.usersdata.userlist_data})
   }
 
   OnReset() {

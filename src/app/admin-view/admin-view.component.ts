@@ -42,7 +42,10 @@ export class AdminViewComponent {
 
   getAllEmp()
   {
-    this.myclient.getData().subscribe(result=>{this.products_list=result})
+    this.myclient.getData().subscribe(result=>{
+      this.products_list=result
+      this.products_list=this.products_list.product_data
+    })
   }
 
   // get id()

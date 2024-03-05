@@ -58,8 +58,11 @@ export class SignUpComponent {
        }
        else{
         let user = this.userform.value;
-        this.myclient.saveData(user).subscribe(result => {})
+        this.myclient.saveData(user).subscribe(result => {
+          alert("Form submitted successfully!")
+        })
        }
+      
   }
   
   OnReset()

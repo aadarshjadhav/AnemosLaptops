@@ -8,7 +8,8 @@ import { Observable, ObservedValueOf, catchError,throwError } from 'rxjs';
 })
 export class MyuserlistService {
 
-  url="http://localhost:3001/userlist_data"
+  // url="assets/userslist.json"
+  url="docs/assets/userslist.json"
   constructor(public myhttpclient:HttpClient) { }
 
   
