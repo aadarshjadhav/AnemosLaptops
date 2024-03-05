@@ -8,7 +8,7 @@ import { Observable, catchError, throwError } from 'rxjs';
 export class ProductsService {
 
   // url="assets/productdata.json"
-  url="docs/assets/productdata.json"
+  url="https://aadarshjadhav.github.io/database/productdata.json"
   constructor(public myhttpclient:HttpClient) { }
 
   

@@ -9,7 +9,7 @@ import { Observable, ObservedValueOf, catchError,throwError } from 'rxjs';
 export class MyuserlistService {
 
   // url="assets/userslist.json"
-  url="docs/assets/userslist.json"
+  url="https://aadarshjadhav.github.io/database/userslist.json"
   constructor(public myhttpclient:HttpClient) { }
 
   
