@@ -37,7 +37,7 @@ export class CustomerViewComponent implements OnInit{
       result => {
         if (typeof result !== 'undefined') {
           this.products_list = result;
-          this.productChunks = this.chunkArray(this.products_list, 4);
+          this.productChunks = this.chunkArray(this.products_list.product_data, 4);
           console.log('Product Chunks:', this.productChunks);
         } else {
           console.error('Error: No products returned from server.');
