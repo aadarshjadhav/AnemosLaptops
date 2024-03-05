@@ -7,7 +7,7 @@ import { Observable, catchError, throwError } from 'rxjs';
 })
 export class ProductsService {
 
-  url="docs/assets/productdata.json"
+  url="http://localhost:3000/product_data"
   constructor(public myhttpclient:HttpClient) { }
 
   

@@ -1,20 +1,22 @@
 
-<div *ngFor="let productChunk of productChunks" class="container d-flex justify-content-center laptops-base">
-  <div class="row">
-      <div class="col column-custom-modify" *ngFor="let product of productChunk">
-          <div class="card card-custom-modify">
-                <img [src]="product.img" class="card-img-top" alt="...">
-                <div class="card-body card-test-box-custom-modify">
-                    <h3 class="card-title">{{ product.name }}</h3>
-                    <p class="card-text">{{ product.description }}</p>
-                    <!-- Assuming product price is available -->
-                    <p class="card-price">Price: {{ product.price }}</p>
-                </div>
-                <div class="btn-base">
-                    <a href="#" class="btn btn-primary small-btn">Add to Cart</a>
-                    <a href="#" class="btn btn-primary small-btn">Add to Wish</a>
-                </div>
-          </div>
-      </div>
-  </div>
+<div class="all-cards-base">
+    <div *ngFor="let productChunk of productChunks" class="container d-flex justify-content-center laptops-base">
+    <div class="row">
+        <div class="col column-custom-modify" *ngFor="let product of productChunk">
+            <div class="card">
+                    <img [src]="product.img" class="card-img-top" alt="...">
+                    <div class="card-body card-test-box-custom-modify">
+                        <h3 class="card-title">{{ product.name }}</h3>
+                        <p class="card-text">{{ product.description }}</p>
+                        <!-- Assuming product price is available -->
+                        <p class="card-price">Price: {{ product.price }}</p>
+                    </div>
+                    <div class="btn-base">
+                        <a href="#" class="btn btn-primary small-btn">Add to Cart</a>
+                        <a href="#" class="btn btn-primary small-btn">Add to Wish</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>
