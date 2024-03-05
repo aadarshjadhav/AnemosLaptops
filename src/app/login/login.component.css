@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+.login-component-base{
+    margin-top: 80px;
+}
+
 .c-form-base{
 
     padding: 20px;
     margin: 40px auto;
-   
+    
     overflow: hidden;
     background-color: rgb(210, 255, 255);
     align-items: center;

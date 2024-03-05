@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.signup-comoponent-base{
+    margin-top:80px ;
+}
+
 .signup-base{
 
     border: solid 2px rgb(255, 255, 255);

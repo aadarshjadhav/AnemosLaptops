@@ -1,54 +1,56 @@
 
-<form [formGroup]="userform" (ngSubmit)="OnSubmit()" class="container justify-content-center c-form-base">
-    <div class="row">
-        <div class="col">
-            <div>
-                <h1>Login</h1>
-                <div class="username-base">
-                    <label>UserName</label>
-                    <input type="text" formControlName="username" class="form-control" class="input-text-box"
-                        [ngClass]="{'is-invalid':submitted && f['username'].errors}">
-                    @if(submitted && f['username'].errors)
-                    {
-                        @if(f['username'].errors['required'])
-                        {
-                            <div>UserName Must be Required</div>
-                        }
-                        @if(f['username'].errors['minlength'])
-                        {
-                            <div>Min 6 char required for Username</div>
-                        }
-                    }
-                </div>
-            
-                <div class="password-base">
-                    <label>Password</label>
-                    <input type="password" formControlName="password" class="form-control" class="input-text-box"
-                        [ngClass]="{'is-invalid':submitted && f['password'].errors}">
-                    @if(submitted && f['password'].errors)
-                    {
-                        @if(f['password'].errors['required'])
-                        {
-                            <div>Password Must be Required</div>
-                        }
-                        @if(f['password'].errors['minlength'])
-                        {
-                            <div>Min 6 char required for password</div>
-                        }
-                    }
-                </div>
-            </div>
+<div class="login-component-base">
 
-            <div>
-                <button type="submit" class="btn ">Submit</button>&nbsp;&nbsp;
-                <button type="singup" class="btn " (click)=navigateToSignUp()>SignUp</button>
+    <form [formGroup]="userform" (ngSubmit)="OnSubmit()" class="container justify-content-center c-form-base">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h1>Login</h1>
+                    <div class="username-base">
+                        <label>UserName</label>
+                        <input type="text" formControlName="username" class="form-control" class="input-text-box"
+                            [ngClass]="{'is-invalid':submitted && f['username'].errors}">
+                        @if(submitted && f['username'].errors)
+                        {
+                            @if(f['username'].errors['required'])
+                            {
+                                <div>UserName Must be Required</div>
+                            }
+                            @if(f['username'].errors['minlength'])
+                            {
+                                <div>Min 6 char required for Username</div>
+                            }
+                        }
+                    </div>
+                
+                    <div class="password-base">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control" class="input-text-box"
+                            [ngClass]="{'is-invalid':submitted && f['password'].errors}">
+                        @if(submitted && f['password'].errors)
+                        {
+                            @if(f['password'].errors['required'])
+                            {
+                                <div>Password Must be Required</div>
+                            }
+                            @if(f['password'].errors['minlength'])
+                            {
+                                <div>Min 6 char required for password</div>
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn ">Submit</button>&nbsp;&nbsp;
+                    <button type="singup" class="btn " (click)=navigateToSignUp()>SignUp</button>
+                </div>
             </div>
         </div>
-    </div>
-
     
 
 </form> 
+</div>
 
 <!-- <form [formGroup]="userform" class="c-form-base" (ngSubmit)="OnSubmit()">
     <mat-form-field appearance="fill">
