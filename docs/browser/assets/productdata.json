@@ -1,0 +1,74 @@
+{
+  "product_data": [
+    {
+      "id": "1",
+      "name": "ASUS TUF Gaming F15",
+      "price": 5000,
+      "description": "AI Powered Gaming Intel Core i5 11th Gen 11260H",
+      "img": "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/v/y/z/-original-imagtucnqsqpbvk6.jpeg?q=70&crop=false"
+    },
+    {
+      "id": "2",
+      "img": "https://m.media-amazon.com/images/I/71cRA3lD-8L._SL1500_.jpg",
+      "name": "MSI Sword 15 A12VF",
+      "price": 105990,
+      "description": "Intel 12th Gen. i7-12650H GeForce RTX4060"
+    },
+    {
+      "id": "3",
+      "img": "https://m.media-amazon.com/images/I/81pl1o7uQ3L._SL1500_.jpg",
+      "name": "Lenovo Legion Y540 9th Gen",
+      "price": 99790,
+      "description": "Intel Core i5 15.6 inch NVIDIA GTX 1650 4GB "
+    },
+    {
+      "id": "4",
+      "img": "https://m.media-amazon.com/images/I/91U5Ler19jL._SL1500_.jpg",
+      "name": "Acer Nitro 5 Gaming Laptop/ 12th Gen",
+      "price": 72650,
+      "description": "Intel Core i5-12500H 12 core 8GB/512GB SSD/RTX 3050"
+    },
+    {
+      "id": "5",
+      "img": "https://m.media-amazon.com/images/I/61spxq2LldL._SL1500_.jpg",
+      "name": "HP Pavilion Gaming AMD Ryzen 5 ",
+      "price": 63000,
+      "description": "AMD Ryzen 5 5600H Processor 15.6 8GB/512GB SSD"
+    },
+    {
+      "id": "6",
+      "img": "https://m.media-amazon.com/images/I/71jtz1DAvBL._SL1500_.jpg",
+      "name": "HP Victus 16-s0094AX ",
+      "price": 83000,
+      "description": "AMD Ryzen 7 7840HS AI powered, 6GB RTX 3050 GPU"
+    },
+    {
+      "id": "7",
+      "img": "https://m.media-amazon.com/images/I/61JQvK1EbwL._SL1080_.jpg",
+      "name": "Dell G15-5530 Gaming Laptop",
+      "price": 81990,
+      "description": "Intel Core i5-13450HX Processor, NVIDIA RTX 3050,6GB GDDR6"
+    },
+    {
+      "id": "8",
+      "img": "https://m.media-amazon.com/images/I/81xnSQAMDLL._SL1500_.jpg",
+      "name": "ASUS ROG Zephyrus M16 (2022)",
+      "price": 198000,
+      "description": "Intel Core i7-12700H 12th Gen, RTX 3060 6GB"
+    },
+    {
+      "id": "9",
+      "img": "https://m.media-amazon.com/images/I/610sreKWXlL._SL1080_.jpg",
+      "name": "Dell G15-5515",
+      "price": 78900,
+      "description": "AMD Ryzen5-5600H, Win 11 + MSO'21, 16Gb Nvidia RTX 3050"
+    },
+    {
+      "id": "10",
+      "img": "https://m.media-amazon.com/images/I/71zj-tRx4mL._SL1500_.jpg",
+      "name": "MSI Gaming Raider GE66",
+      "price": 414990,
+      "description": "Intel 12th Gen. i7-12700H, 17.3 Nvidia RTX 3080Ti"
+    }
+  ]
+}
